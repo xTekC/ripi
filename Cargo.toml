@@ -27,7 +27,7 @@ path = "src/bin/main.rs"
 [dependencies]
 clap = { version = "4.2.7", features = ["derive"] }
 indicatif = "0.17.6"
-tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
+tokio = { version = "1.32.0", features = ["rt-multi-thread", "macros"] }
 
 # [dependencies.cursive]
 # version = "0.20.0"
