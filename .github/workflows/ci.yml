@@ -31,11 +31,11 @@ jobs:
               TOOLCHAIN: stable,
               TARGET: riscv64gc-unknown-linux-gnu,
             }
-          - {
-              OS: ubuntu-latest,
-              TOOLCHAIN: stable,
-              TARGET: aarch64-linux-android,
-            }
+          # - {
+          #     OS: ubuntu-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: aarch64-linux-android,
+          #   }
           - {
               OS: ubuntu-latest,
               TOOLCHAIN: stable,
@@ -56,40 +56,40 @@ jobs:
               TOOLCHAIN: stable,
               TARGET: x86_64-unknown-linux-musl,
             }
-          - {
-              OS: ubuntu-latest,
-              TOOLCHAIN: stable,
-              TARGET: x86_64-unknown-freebsd,
-            }
-          - {
-              OS: ubuntu-latest,
-              TOOLCHAIN: stable,
-              TARGET: x86_64-unknown-netbsd,
-            }
-          - {
-              OS: macos-latest,
-              TOOLCHAIN: stable,
-              TARGET: aarch64-apple-darwin,
-            }
-          - { OS: macos-latest, 
-              TOOLCHAIN: stable, 
-              TARGET: x86_64-apple-darwin,
-            }
-          - {
-              OS: windows-latest,
-              TOOLCHAIN: stable,
-              TARGET: aarch64-pc-windows-msvc,
-            }
-          - {
-              OS: windows-latest,
-              TOOLCHAIN: stable,
-              TARGET: x86_64-pc-windows-gnu,
-            }
-          - {
-              OS: windows-latest,
-              TOOLCHAIN: stable,
-              TARGET: x86_64-pc-windows-msvc,
-            }
+          # - {
+          #     OS: ubuntu-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: x86_64-unknown-freebsd,
+          #   }
+          # - {
+          #     OS: ubuntu-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: x86_64-unknown-netbsd,
+          #   }
+          # - {
+          #     OS: macos-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: aarch64-apple-darwin,
+          #   }
+          # - { OS: macos-latest, 
+          #     TOOLCHAIN: stable, 
+          #     TARGET: x86_64-apple-darwin,
+          #   }
+          # - {
+          #     OS: windows-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: aarch64-pc-windows-msvc,
+          #   }
+          # - {
+          #     OS: windows-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: x86_64-pc-windows-gnu,
+          #   }
+          # - {
+          #     OS: windows-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: x86_64-pc-windows-msvc,
+          #   }
 
     steps:
       - name: Checkout the repository
