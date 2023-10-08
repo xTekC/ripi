@@ -16,7 +16,7 @@ publish = false
 # workspace = "..."
 # links = "..."
 # build = "build.rs"
-rust-version = "1.69.0"
+rust-version = "1.73.0"
 edition = "2021"
 license = "MPL-2.0"
 
@@ -25,14 +25,9 @@ name = "ripi"
 path = "src/bin/main.rs"
 
 [dependencies]
-clap = { version = "4.2.7", features = ["derive"] }
-indicatif = "0.17.6"
-tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
-
-# [dependencies.cursive]
-# version = "0.20.0"
-# default-features = false
-# features = ["crossterm-backend"]
+clap = { version = "4.4.6", features = ["derive"] }
+indicatif = "0.17.7"
+tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
 
 # [dev-dependencies]
 
